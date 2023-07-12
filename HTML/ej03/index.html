@@ -21,7 +21,7 @@
                     
                     <label for="surname">
                         <h3>Apellidos</h3>
-                        <input type="text" name="surname" id="surname" class="form-control" pattern="([[a-zA-Zñ]{3,})+[ ]{1}([[a-zA-Zñ]{3,})" required>
+                        <input type="text" name="surname" id="surname" class="form-control" pattern="[A-Za-zñ]{3,}[ ]{1}[a-zA-Zñ]{3,}" required>
                     </label>
                     <fieldset>
                         <label for="street_type">
@@ -123,7 +123,7 @@
                     </label>
                     <label for="tlph"> 
                         <h3 class="field_class">Número de teléfono</h3>
-                        <input type="tel" name="tlph" id="tlph" pattern="[6-8]{1}[0-9]{2}-[0-9]{3}-[0-9]{3}" class="form-control" required >
+                        <input type="tel" name="tlph" id="tlph" pattern="[6-8]{1}[0-9]{8}" class="form-control" required >
                     </label>
                     <label for="email">
                         <h3 class="field_class">Email</h3>
