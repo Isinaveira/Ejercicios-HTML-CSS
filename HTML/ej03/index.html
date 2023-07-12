@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1> Bienvenido!</h1>
+        <h3>Rellena el formulario para crear tu cuenta</h3>
+        <div class="form-container">
+            <form action="" method="post">
+                <div class="form-fields">
+                    <label for="name">
+                        <h3 class="field_class">Nombre</h3>
+                        <input type="text" name="name" id="name" class="form-control" required>
+                    </label>
+                    
+                    <label for="surname">
+                        <h3>Apellidos</h3>
+                        <input type="text" name="surname" id="surname" class="form-control" pattern="([[a-zA-Zñ]{3,})+[ ]{1}([[a-zA-Zñ]{3,})" required>
+                    </label>
+                    <fieldset>
+                        <label for="street_type">
+                            <h3 class="field_class">Tipo de vía</h3>
+                            <select name="" id="street_type" required>
+                                <option value="Calle" selected>Calle</option>
+                                <option value="Avenida">Avenida</option>
+                                <option value="Lugar">Lugar</option>
+                            </select>
+                        </label>
+                        <label for="stree_name">
+                            <h3 class="field_class">Nombre de la vía</h3>
+                            <input type="text" name="street_name" id="stree_name" class="form-control" required>
+                        </label>
+                        <label for="cip_code">
+                            <h3 class="field_class">Código postal</h3>
+                            <input type="number" name="cip_code" id="cip_code" class="form-control" required>
+                        </label>
+                        <label for="city">
+                            <h3 class="field_class">Ciudad</h3>
+                            <input type="text" name="city" id="city" class="form-control" required>
+                        </label>
+                        <label for="province">
+                            <h3 class="field_class">Provincia</h3>
+                            <select name="provincia" class="form-control" >
+                                <option value="">Elige Provincia</option>
+                                <option value="Álava">Álava</option>
+                                <option value="Albacete">Albacete</option>
+                                <option value="Alicante">Alicante</option>
+                                <option value="Almería">Almería</option>
+                                <option value="Asturias">Asturias</option>
+                                <option value="Ávila">Ávila</option>
+                                <option value="Badajoz">Badajoz</option>
+                                <option value="Baleares">Baleares</option>
+                                <option value="Barcelona">Barcelona</option>
+                                <option value="Burgos">Burgos</option>
+                                <option value="Cáceres">Cáceres</option>
+                                <option value="Cádiz">Cádiz</option>
+                                <option value="Cantabria">Cantabria</option>
+                                <option value="Castellón">Castellón</option>
+                                <option value="Ceuta">Ceuta</option>
+                                <option value="Ciudad Real">Ciudad Real</option>
+                                <option value="Córdoba">Córdoba</option>
+                                <option value="Cuenca">Cuenca</option>
+                                <option value="Girona">Gerona/Girona</option>
+                                <option value="Granada">Granada</option>
+                                <option value="Guadalajara">Guadalajara</option>
+                                <option value="Gipuzkoa">Gipuzkoa</option>
+                                <option value="Huelva">Huelva</option>
+                                <option value="Huesca">Huesca</option>
+                                <option value="Jaén">Jaén</option>
+                                <option value="A Coruña">A Coruña</option>
+                                <option value="La Rioja">La Rioja</option>
+                                <option value="Las Palmas">Las Palmas</option>
+                                <option value="León">León</option>
+                                <option value="Lleida">Lleida</option>
+                                <option value="Lugo">Lugo</option>
+                                <option value="Madrid">Madrid</option>
+                                <option value="Málaga">Málaga</option>
+                                <option value="Melilla">Melilla</option>
+                                <option value="Murcia">Murcia</option>
+                                <option value="Navarra">Navarra</option>
+                                <option value="Ourense">Ourense</option>
+                                <option value="Palencia">Palencia</option>
+                                <option value="Pontevedra">Pontevedra</option>
+                                <option value="Salamanca">Salamanca</option>
+                                <option value="Segovia">Segovia</option>
+                                <option value="Sevilla">Sevilla</option>
+                                <option value="Soria">Soria</option>
+                                <option value="Tarragona">Tarragona</option>
+                                <option value="Tenerife">Tenerife</option>
+                                <option value="Teruel">Teruel</option>
+                                <option value="Toledo">Toledo</option>
+                                <option value="Valencia">Valencia</option>
+                                <option value="Valladolid">Valladolid</option>
+                                <option value="Bizkaia">Bizkaia</option>
+                                <option value="Zamora">Zamora</option>
+                                <option value="Zaragoza">Zaragoza</option>
+                              </select>
+                        </label>
+                        <label for="country"> 
+                            <h3 class="field_class">País</h3>
+                            <select name="country" class="form-control">
+                                <option value="">Pais</option>
+                                <option value="AD">Andorra</option>
+                                <option value="FR">France</option>
+                                <option value="PT">Portugal</option>
+                                <option value="ES">Spain</option>
+                              </select>
+                        </label>
+                    </fieldset>
+                    <label for="birth_date">
+                        <h3 class="field_class">Fecha de nacimiento</h3> 
+                        <input type="date" name="birth_date" id="birth_date" class="form-control" required>
+                    </label>
+                    <label for="avg_grade">
+                        <h3 class="field_class">Nota media en la universidad</h3>
+                        <input type="number" name="avg_grade" id="avg_grade" min="1" max="10" step="0.5" class="form-control" required>
+                    </label>
+                    <label for="tlph"> 
+                        <h3 class="field_class">Número de teléfono</h3>
+                        <input type="tel" name="tlph" id="tlph" pattern="[6-8]{1}[0-9]{2}-[0-9]{3}-[0-9]{3}" class="form-control" required >
+                    </label>
+                    <label for="email">
+                        <h3 class="field_class">Email</h3>
+                        <input type="email" name="email" id="email" class="form-control" required>
+                    </label>
+                    <label for="passw">
+                        <h3 class="field_class">Contraseña</h3>
+                        <input type="password" name="passw" id="passw" class="form-control" required>
+                    </label>
+                    <label for="passw2">
+                        <h3 class="field_class" >Repite la contraseña</h3>
+                        <input type="password" name="passw2" id="passw2" class="form-control" required>
+                    </label>
+                    <label for="country_account"> 
+                        <h3 class="field_class">País de la cuenta</h3>
+                        <select name="country_account" id="country_account" class="form-control" required>
+                            <option value="">Selecciona un País</option>
+                            <option value="Spain">España</option>
+                            <option value="France">Francia</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Portugal">Portugal</option>
+                        </select>
+                    </label>
+                    <label for="account_type">
+                        <h3 class="field_class">Tipo de cuenta</h3>
+                        <div class="accounts">
+                            <label>
+                                <input type="radio" name="account_type" id="free_account" checked class="form-control">Gratuita
+                                <p class="description" hidden>Tan solo tendrás acceso a las funcionalidades más básicas 10 veces a la hora</p>
+                            </label>
+                            <label>
+                                <input type="radio" name="account_type" id="basic_account" class="form-control">Básica
+                                <p class="description" hidden>Acceso a todas las funcionalidades como máximo 10 veces a la hora</p>
+                            </label>
+                            <label>
+                                <input type="radio" name="account_type" id="premium_account" class="form-control">Premium
+                            <p class="description" hidden>Acceso ilimitado a todas las funcionalidades</p>
+                            </label>
+                        </div>
+                        
+                    </label>
+                    <label for="about_me">
+                        <h3 class="field_class">Sobre tí</h3>
+                        <textarea name="about_me" id="about_me" cols="30" rows="10" placeholder="descríbete" class="form-control" required></textarea>
+                    </label>
+                    <label for="profile_image">
+                        <h3 class="field_class">Selecciona una foto de perfíl</h3>
+                        <input type="file" name="profile_image" id="profile_image" accept="image/png, image/jpg, image/jpeg, image/svg" class="form-control" required>
+                    </label>
+                    <label for="curriculum">
+                        <h3 class="field_class">curriculum</h3>
+                        <input type="file" name="curriculum" id="curriculum" accept=".pdf, .doc, .docx, .txt" class="form-control">
+                    </label>
+                </div>
+                
+                <button type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
