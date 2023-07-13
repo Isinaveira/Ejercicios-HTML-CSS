@@ -28,14 +28,26 @@ h2{
     text-align: center;
 }
 
-.list_ejers{
-    display: flex;
+.list_ejers_html{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     justify-content: space-between;
     align-items: center;
     gap: 30px;
     flex-wrap: wrap;
-    max-width: 60%;
+    
 }
+
+.list_ejers_css{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
 
 li{
     background-color: #e75f5f;
